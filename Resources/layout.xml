@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<magic>
+  <Styles>
+    <Style name="default">
+      <Nodes/>
+      <Classes>
+        <plot-view border="2" background-color="black" border-color="silver" display="contents"/>
+        <nomargin margin="0" padding="0" border="0"/>
+        <group margin="5" padding="5" border="2" flex-direction="column"/>
+        <transparent background-color="transparentblack"/>
+      </Classes>
+      <Types>
+        <Slider border="0" slider-textbox="textbox-below"/>
+        <ToggleButton border="0" max-height="50" caption-size="0" text="Active"/>
+        <TextButton border="0" max-height="50" caption-size="0"/>
+        <ComboBox border="0" max-height="50" caption-size="0"/>
+        <Plot border="0" margin="0" padding="0" background-color="00000000"
+              radius="0"/>
+        <XYDragComponent border="0" margin="0" padding="0" background-color="00000000"
+                         radius="0"/>
+      </Types>
+      <Palettes>
+        <default/>
+      </Palettes>
+    </Style>
+  </Styles>
+  <View id="root" resizable="1" resize-corner="1" flex-direction="column"
+        description="" lookAndFeel="Skeuomorphic" tab-caption="" background-color="">
+    <View class="parameters nomargin" lookAndFeel="" background-color="FFDDDAC7">
+      <View flex-direction="column" background-color="FFB4AA9B">
+        <Slider caption="Modulation Width" parameter="VFDN:mod_width" lookAndFeel="Skeuomorphic"
+                slider-text-background="FFFFFFFF" slider-text="FF000000" rotary-outline=""
+                rotary-fill="FFAD371E" background-color="FF13924F" caption-color="FFFFFFFF"/>
+        <Slider caption="Modulation Frequency" parameter="VFDN:mod_freq" lookAndFeel="Skeuomorphic"
+                slider-text-background="FFFFFFFF" slider-text="FF000000" rotary-fill="FF29B95C"
+                flex-align-self="stretch" background-color="FFBC362F" caption-color="FFFFFFFF"/>
+      </View>
+      <View background-color="FFB4AA9B">
+        <Slider parameter="VFDN:wet" lookAndFeel="LookAndFeel_V1" background-color="FF463C9F"
+                caption-color="FFFFFFFF" slider-track="FF424040" slider-thumb="FFE4C828"
+                caption="Mix"/>
+      </View>
+      <View background-color="FFB4AA9B" border-color="">
+        <Slider caption="Gain (dB)" parameter="VFDN:gain" lookAndFeel="LookAndFeel_V1"
+                background-color="FFE2B640" tab-color="" border-color="" caption-color="FFFFFFFF"
+                slider-track="FF535050" slider-thumb="FF576BF2"/>
+      </View>
+    </View>
+  </View>
+</magic>
